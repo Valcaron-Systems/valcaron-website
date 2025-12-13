@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parallax responsive landing page</title>
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- ICONS BOXICONS -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- ===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <a href="#" class="nav__logo">Mountain</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu-alt-right'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Explore</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Aventure</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Discover</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- ===== HOME =====-->
+            <div class="home">
+            <div
+                class="parallax home__parallax home__parallax-hero"
+                data-rellax-speed="-3"
+            ></div>
+
+            <div class="home__hero-text parallax" data-rellax-speed="-5">
+                <h1 class="home__title">Valcaron</h1>
+                <span class="home__subtitle">
+                Advanced aerial systems for rapid situational awareness
+                </span>
+            </div>
+
+            <div class="home__scroll">
+                <a href="#section"><i class="bx bx-mouse"></i></a>
+            </div>
+            </div>
+
+
+            <!-- ===== SECTION 1 Mission =====-->
+            <section class="l-section" id="section">
+                <div class="section">
+                    <div class="section__data">
+                        <h2 class="section__title">What we do</h2>
+                        <p class="section__text"> Valcaron develops advanced aerial systems that help emergency, 
+                            security, and defence teams gain rapid situational awareness in challenging environments. 
+                            Our technology supports faster and safer decision-making during critical operations by improving 
+                            the speed and accuracy of locating people, hazards, 
+                            and key points of interest when time and clarity are essential.</p>
+                    </div>
+        
+                    <img src="assets/img/ruins.jpeg" alt="" class="section__img">
+                </div>
+            </section>
+        </main>
+        <!-- ===== Section 2  Meet the Team ===== -->
+<section class="l-section" id="team">
+  <div class="team-grid">
+
+    <!-- Dean -->
+    <div class="team-column">
+      <div class="team-name">
+        <h3>Dean Rowlett MEng MIET</h3>
+        <span>Co-Founder</span>
+      </div>
+
+      <div class="team-bio">
+        Dean is a robotics engineer with experience developing robotic systems,
+        perception software, and embedded software. His work includes system
+        design, rapid prototyping, and field testing across a range of applications.
+      </div>
+
+      <div class="team-photo">
+        <img src="assets/img/Dean-headshot.jpg" alt="Dean Rowlett">
+      </div>
+    </div>
+
+    <!-- Reece -->
+    <div class="team-column">
+      <div class="team-name">
+        <h3>Reece Alexander BEng</h3>
+        <span>Co-Founder</span>
+      </div>
+
+      <div class="team-bio">
+        Reece is a robotics engineer with a particular interest in robotic systems
+        engineering, supported by a strong foundation in software development
+        and electronics.
+      </div>
+
+      <div class="team-photo">
+        <img src="assets/img/Reece-headshot.jpg" alt="Reece Alexander">
+      </div>
+    </div>
+
+    <!-- Harris -->
+    <div class="team-column">
+      <div class="team-name">
+        <h3>Harris</h3>
+        <span>Public Relations Officer</span>
+      </div>
+
+      <div class="team-bio">
+        Woof
+      </div>
+
+      <div class="team-photo">
+        <img src="assets/img/Harris.jpeg" alt="Harris">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+        <!-- Contact us -->
+        <section class="l-section" id="contact">
+        <div class="section">
+            <div class="section__data">
+            <h2 class="section__title">Contact us</h2>
+
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/xjknljov"
+                method="POST"
+            >
+                <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+                />
+
+                <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                />
+
+                <textarea
+                name="message"
+                placeholder="Your message"
+                required
+                ></textarea>
+
+                <button type="submit">Send message</button>
+            </form>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- RELLAX JS -->
+        <script src="assets/js/rellax.min.js"></script>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+        <!-- SCROLL REVEAL -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- MAIN JS -->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
