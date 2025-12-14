@@ -4,6 +4,8 @@
 /*===== VARIABLES CSS =====*/
 /*=== Colores ===*/
 :root {
+  --metallic-silver: #C6C8CC;
+  --metallic-silver-dark: #9EA2A8;
   --first-color: #0396A6;
   --dark-color: #000;
   --white-color: #F2F2F2;
@@ -411,15 +413,22 @@ img {
   text-align: center;
 }
 
-.home__title {
-  color: white;
+.home__hero-text .home__title {
+  color: var(--metallic-silver);
   margin-bottom: 0.6em;
 }
 
-.home__subtitle {
-  color: white;
+.home__hero-text .home__subtitle {
+  color: var(--metallic-silver);
   font-weight: bold;
 }
+.home__hero-text .home__title,
+.home__hero-text .home__subtitle {
+  text-shadow: 
+    0 1px 1px rgba(0,0,0,0.6),
+    0 0 8px rgba(198,200,204,0.15);
+}
+
 /* ===== FINAL HERO TEXT FIX ===== */
 
 .home__hero-text {
@@ -437,17 +446,6 @@ img {
 .home__hero-text .home__title,
 .home__hero-text .home__subtitle {
   position: static;
-}
-
-/* visual styling */
-.home__hero-text .home__title {
-  color: white;
-  margin-bottom: 0.6em;
-}
-
-.home__hero-text .home__subtitle {
-  color: white;
-  font-weight: bold;
 }
 
 /* =========================
