@@ -14,7 +14,9 @@
         <!-- ===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
-                <a href="#" class="nav__logo">Mountain</a>
+                <a href="index.html" class="nav__link">
+                  <img src="assets/img/valcaron-backgroundless.png" alt="Valcaron" class="nav__logo-img">
+                </a>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu-alt-right'></i>
@@ -23,16 +25,16 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Explore</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Aventure</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Discover</a></li>
+                        <li class="nav__item"><a href="mission.html" class="nav__link">Mission</a></li>
+                        <li class="nav__item"><a href="team.html" class="nav__link">Team</a></li>
+                        <li class="nav__item"><a href="technology.html" class="nav__link">Technology</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
 
-        <main>
-            <!-- ===== HOME =====-->
+      <main>
+        <!-- ===== HOME =====-->
         <div class="home">
         <video
             class="home__video"
@@ -74,104 +76,86 @@
                 </div>
             </section>
         </main>
-        <!-- ===== Section 2  Meet the Team ===== -->
-<section class="l-section" id="team">
-  <div class="team-grid">
+        <!-- ===== NEWS SECTION ===== -->
+        <section class="l-section" id="news">
+          <div class="section news-section">
 
-    <!-- Dean -->
-    <div class="team-column">
-      <div class="team-name">
-        <h3>Dean Rowlett MEng MIET</h3>
-        <span>Co-Founder</span>
-      </div>
+            <h2 class="section__title">News & Updates</h2>
 
-      <div class="team-bio">
-        Dean is a robotics engineer with experience developing robotic systems, 
-        perception software, and embedded software. His work includes system design,  
-        rapid prototyping, and field testing across a
-        range of applications. He is focused on practical, deployable robotic systems.
-      </div>
+            
+            <!-- <div class="news-item">
+              <h3 class="news-date">December 2025</h3>
+              <h4 class="news-heading">Runner-up in global innovation challenge</h4>
+              <p class="news-text">
+                Valcaron was selected as runner-up in a global accelerator programme, receiving funding
+                to support the purchase of specialist hardware and continued technical development.
+              </p>
+              <p class="news-text">
+                The award recognises the potential impact of Valcaron's work in improving situational
+                awareness for search & rescue, security, and defence applications, and supports the
+                transition from early research toward deployable field systems.
+              </p>
+            </div> -->
+            <div class="news-item">
+              <h3 class="news-date">August 2025</h3>
+              <h4 class="news-heading">Valcaron joins the Heriot-Watt EBS Incubator</h4>
+              <p class="news-text">
+                Valcaron was accepted into the Heriot-Watt University EBS Incubator in August 2025.
+                The year-long programme supports early-stage technology companies through structured
+                mentoring, technical development support, and access to academic and industry networks.
+              </p>
+              <p class="news-text">
+                Participation in the incubator enables Valcaron to further develop its research-driven
+                approach to onboard aerial intelligence while engaging closely with experienced founders,
+                engineers, and domain specialists.
+              </p>
+            </div>
 
-      <div class="team-photo">
-        <img src="assets/img/Dean-headshot.jpg" alt="Dean Rowlett">
-      </div>
-    </div>
-
-    <!-- Reece -->
-    <div class="team-column">
-      <div class="team-name">
-        <h3>Reece Alexander BEng</h3>
-        <span>Co-Founder</span>
-      </div>
-
-      <div class="team-bio">
-        Reece is a robotics engineer with a particular interest in robotic systems engineering,
-         supported by a strong foundation in software development and electronics. In addition to his technical capabilities, he also has
-        experience in robotic inspection of both onshore and offshore assets.
-      </div>
-
-      <div class="team-photo">
-        <img src="assets/img/Reece-headshot.jpg" alt="Reece Alexander">
-      </div>
-    </div>
-
-    <!-- Harris -->
-    <div class="team-column">
-      <div class="team-name">
-        <h3>Harris</h3>
-        <span>Public Relations Officer</span>
-      </div>
-
-      <div class="team-bio">
-        Woof
-      </div>
-
-      <div class="team-photo">
-        <img src="assets/img/Harris.jpeg" alt="Harris">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
+          </div>
+        </section>
 
         <!-- Contact us -->
         <section class="l-section" id="contact">
-        <div class="section">
-            <div class="section__data">
-            <h2 class="section__title">Contact us</h2>
+          <div class="contact-container">
 
-            <form
+            <!-- LEFT: CONTACT INFO -->
+            <div class="contact-info">
+              <h2 class="section__title">Get in touch</h2>
+
+              <p>
+                We're always open to conversations with search & rescue teams,
+                security partners, researchers, and collaborators.
+              </p>
+
+              <p><strong>Email</strong><br>
+                <a href="mailto:contact@valcaron.co.uk">contact@valcaron.co.uk</a>
+              </p>
+
+              <p><strong>Follow us</strong></p>
+              <div class="contact-socials">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="X">X / Twitter</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+              </div>
+            </div>
+
+            <!-- RIGHT: CONTACT FORM -->
+            <div class="contact-form-wrapper">
+              <form
                 class="contact-form"
                 action="https://formspree.io/f/xjknljov"
                 method="POST"
-            >
-                <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                required
-                />
-
-                <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                required
-                />
-
-                <textarea
-                name="message"
-                placeholder="Your message"
-                required
-                ></textarea>
-
+              >
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea name="message" placeholder="Your message" required></textarea>
                 <button type="submit">Send message</button>
-            </form>
+              </form>
             </div>
-        </div>
+
+          </div>
         </section>
+
 
 
         <!-- RELLAX JS -->
@@ -188,3 +172,4 @@
 
     </body>
 </html>
+<script src="assets/js/main.js"></script>

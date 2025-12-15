@@ -45,3 +45,20 @@ sr.reveal('.team-column', {
   distance: '60px',
   interval: 200
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('nav-toggle');
+  const menu = document.getElementById('nav-menu');
+
+  if (!toggle || !menu) return;
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('show');
+    });
+  });
+});
