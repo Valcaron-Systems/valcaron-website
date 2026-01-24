@@ -4,20 +4,20 @@ const teamMembers = [
   {
     name: "Dean Rowlett MEng MIET",
     role: "Co-Founder",
-    bio: "Robotics engineer focused on deployable autonomous systems, onboard perception, and field-tested aerial robotics.",
     image: "/images/Dean-headshot.jpg",
+    bio: "Robotics engineer focused on deployable autonomous systems, onboard perception, and field-tested aerial robotics.",
   },
   {
     name: "Reece Alexander BEng",
     role: "Co-Founder",
-    bio: "Robotics engineer with strengths in systems engineering, software, electronics, and robotic inspection of onshore and offshore assets.",
     image: "/images/Reece-headshot.jpg",
+    bio: "Robotics engineer with strengths in systems engineering, software, electronics, and robotic inspection of onshore and offshore assets.",
   },
   {
     name: "Harris",
     role: "Public Relations Officer",
-    bio: "Woof.",
     image: "/images/Harris.jpeg",
+    bio: "Woof.",
   },
 ];
 
@@ -53,17 +53,13 @@ const Team = () => {
                 key={member.name}
                 className="group"
               >
-                {/* Photo placeholder */}
-                <div className="aspect-square bg-secondary/50 border border-border rounded-lg mb-6 overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="w-24 h-24 rounded-full bg-muted flex items-center justify-center">
-                      <span className="text-3xl font-medium text-muted-foreground">
-                        {member.name.split(' ').map(n => n[0]).join('')}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                
+                <div className="aspect-square border border-border rounded-lg mb-6 overflow-hidden">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>               
                 {/* Info */}
                 <h3 className="text-lg font-medium mb-1">{member.name}</h3>
                 <p className="text-primary text-sm font-medium mb-4">{member.role}</p>
