@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Valcaron Dark Theme - Engineering-first aesthetic */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Technical Blue - #0396A6 */
+    --primary: 185 97% 33%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Dark surface */
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted dark surfaces */
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 65%;
+
+    /* Accent - same as primary */
+    --accent: 185 97% 33%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Metallic Silver - #C6C8CC */
+    --silver: 220 5% 79%;
+    --silver-foreground: 0 0% 0%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 185 97% 33%;
+
+    --radius: 0.25rem;
+
+    /* Custom tokens */
+    --nav-height: 5rem;
+    --section-spacing: 8rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  /* Selection color */
+  ::selection {
+    @apply bg-primary/30 text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Text utilities */
+  .text-silver {
+    color: hsl(var(--silver));
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Animation utilities */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-delayed {
+    animation: fadeIn 0.6s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-20 md:py-32;
+  }
+
+  /* Container */
+  .container-narrow {
+    @apply max-w-4xl mx-auto px-6;
+  }
+
+  /* Heading styles */
+  .heading-display {
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-tight;
+  }
+
+  .heading-section {
+    @apply text-2xl md:text-3xl font-semibold tracking-tight;
+  }
+
+  .heading-subsection {
+    @apply text-xl md:text-2xl font-medium;
+  }
+
+  /* Body text */
+  .body-large {
+    @apply text-lg md:text-xl leading-relaxed text-muted-foreground;
+  }
+
+  .body-prose {
+    @apply text-base md:text-lg leading-relaxed text-muted-foreground;
+  }
+
+  /* Accent text */
+  .text-accent-primary {
+    @apply text-primary;
+  }
+
+  /* Border accent */
+  .border-accent {
+    @apply border-l-2 border-primary pl-4;
+  }
+}
