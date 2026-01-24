@@ -5,19 +5,19 @@ const teamMembers = [
     name: "Dean Rowlett MEng MIET",
     role: "Co-Founder",
     bio: "Robotics engineer focused on deployable autonomous systems, onboard perception, and field-tested aerial robotics.",
-    image: "/images/dean.jpg",
+    image: "/images/Dean-headshot.jpg",
   },
   {
     name: "Reece Alexander BEng",
     role: "Co-Founder",
     bio: "Robotics engineer with strengths in systems engineering, software, electronics, and robotic inspection of onshore and offshore assets.",
-    image: "/images/reece.jpg",
+    image: "/images/Reece-headshot.jpg",
   },
   {
     name: "Harris",
     role: "Public Relations Officer",
     bio: "Woof.",
-    image: "/images/harris.jpg",
+    image: "/images/Harris.jpeg",
   },
 ];
 
