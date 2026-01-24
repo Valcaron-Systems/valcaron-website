@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
   base: "/valcaron-website/",
+  plugins: [react()],
   server: {
     host: "::",
     port: 8080,
